@@ -2,6 +2,8 @@ package com.DKrywyj
 
 class Appointment {
 
+	def scaffold=Appointment
+
 // Declaring Variables
 	Date appDate
 	Date appTime

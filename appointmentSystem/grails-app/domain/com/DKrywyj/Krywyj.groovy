@@ -2,6 +2,7 @@ package com.DKrywyj
 
 class Krywyj {
 
-    static constraints = {
-    }
+	def scaffold=Krywyj
+
+
 }
