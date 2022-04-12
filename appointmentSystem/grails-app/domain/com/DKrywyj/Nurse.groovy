@@ -16,8 +16,9 @@ class Nurse {
 	nurseName size:5..50, blank:false
 	nurseEmail size:5..50, blank:false
 	nurseOffice size:5..5, blank:false
-	nursePhone max:11, blank:false
+	nursePhone size:11..11, blank:false
 	
 	
     }
+static belongsTo = [doctor:Doctor, surgery:Surgery]
 }

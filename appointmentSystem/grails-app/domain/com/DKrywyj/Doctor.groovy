@@ -22,7 +22,10 @@ class Doctor {
 	doctorEmail size:1..300, blank:false
 	password size:10..150, blank:false
 	doctorOffice size:1..100, blank:false
-	doctorPhone min:11, blank:false
+	doctorPhone sixe:11..11, blank:false
 	bio size:10..300, blank:false
+
     }
+static hasMany = [prescription:Prescription, appointment:Appointment, nurse:Nurse, patient:Patient, doctor:Doctor]
+static belongsTo = [Surgery:Surgery]
 }
