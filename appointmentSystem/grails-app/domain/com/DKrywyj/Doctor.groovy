@@ -26,6 +26,6 @@ class Doctor {
 	bio size:10..300, blank:false
 
     }
-static hasMany = [prescription:Prescription, appointment:Appointment, nurse:Nurse, patient:Patient, doctor:Doctor]
-static belongsTo = [Surgery:Surgery]
+//static hasMany = [prescription:Prescription, appointment:Appointment, nurse:Nurse, patient:Patient, doctor:Doctor]
+//static belongsTo = [Surgery:Surgery]
 }

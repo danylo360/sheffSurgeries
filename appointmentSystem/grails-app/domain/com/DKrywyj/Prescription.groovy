@@ -22,6 +22,6 @@ class Prescription {
 	patientPaying size:0..3, blank:false
 	
     }
-static hasMany = [patient:Patient]
-static belongsTo = [patient:Patient, doctor:Doctor]
+//static hasMany = [patient:Patient]
+//static belongsTo = [patient:Patient, doctor:Doctor]
 }

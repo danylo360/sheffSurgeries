@@ -19,6 +19,6 @@ class Appointment {
 	roomNumber size:5..5, blank:false
 	
     }
-static hasMany = [patient:Patient]
-static belongsTo = [doctor:Doctor, patient:Patient, surgery:Surgery]
+//static hasMany = [patient:Patient]
+//static belongsTo = [doctor:Doctor, patient:Patient, surgery:Surgery]
 }

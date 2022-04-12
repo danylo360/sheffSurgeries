@@ -20,5 +20,5 @@ class Nurse {
 	
 	
     }
-static belongsTo = [doctor:Doctor, surgery:Surgery]
+//static belongsTo = [doctor:Doctor, surgery:Surgery]
 }

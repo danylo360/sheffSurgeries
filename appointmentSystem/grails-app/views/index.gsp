@@ -43,30 +43,32 @@
     </li>
 </content>
 
-<div class="svg" role="presentation">
-    <div class="grails-logo-container">
-        <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
-    </div>
-</div>
+
+
 
 <div id="content" role="main">
     <section class="row colset-2-its">
-        <h1>Welcome to Grails</h1>
+        <h1>Welcome to Sheffield Surgeries</h1>
 
         <p>
-            Congratulations, you have successfully started your first Grails application! At the moment
-            this is the default page, feel free to modify it to either redirect to a controller or display
-            whatever content you may choose. Below is a list of controllers that are currently deployed in
-            this application, click on each to execute its default action:
+            Welcome to Sheffield Surgery
+
+
+We have changed the way we provide our services in order to maintain safe social distancing and to reduce the risk of Covid-19 transmission for our patients and staff.
+
+If you or anyone in your household has a temperature, a new continuous cough, or a lost or change in your taste or sense of smell, please vook a coronavirus test via NHS 111 online or phone 119. Please do not come to the surgery.
+
+All appointments will now initally be conducted by telephone or Online. If after this initial assessment a face to face appointment is considered to be necessary then this will be offered. Please do not attend the surgery in person unless specifically invited to do so. When attended the surgery please wear a face covering.
+
+Thank you for your cooperation.
         </p>
 
         <div id="controllers" role="navigation">
-            <h2>Available Controllers:</h2>
             <ul>
                 <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                    <li class="controller">
+                    <button type="button" class="controllers">
                         <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                    </li>
+                    </button>
                 </g:each>
             </ul>
         </div>
