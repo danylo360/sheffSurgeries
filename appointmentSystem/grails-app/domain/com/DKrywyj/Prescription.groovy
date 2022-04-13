@@ -16,12 +16,12 @@ class Prescription {
 //Write constraints
 	pharmacyName size:3..30, blank:false
 	prescriptionNumber size:5..50, blank:false
-	medicine size:0-30, blank:false
+	medicine size:0..30, blank:false
 	totalCost size:3..30, blank:false
 	dateIssued blank:false
 	patientPaying size:0..3, blank:false
 	
     }
-//static hasMany = [patient:Patient]
-//static belongsTo = [patient:Patient, doctor:Doctor]
+
+static belongsTo = [patient:Patient, doctor:Doctor]
 }

@@ -20,6 +20,6 @@ class Receptionist {
 	recepPhone size:11..11, blank:false
 	
     }
-//static hasMany = [surgery:Surgery]
-//static belongsTo = [surgery:Surgery]
+
+static belongsTo = [surgery:Surgery]
 }

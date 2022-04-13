@@ -21,6 +21,5 @@ class Surgery {
 	description Size:10..150, blank:false
 	openingTimes blank:false
     }
-//static hasMany = [appointment:Appointment, nurse:Nurse]
-//static belongsTo = [appointment:Appointment, nurse:Nurse]
+static hasMany = [appointment:Appointment, nurse:Nurse, doctor:Doctor, patient:Patient, receptionist:Receptionist]
 }

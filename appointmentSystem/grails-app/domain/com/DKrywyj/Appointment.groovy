@@ -2,12 +2,12 @@ package com.DKrywyj
 
 class Appointment {
 
-	def scaffold=Appointment
+	
 
 // Declaring Variables
 	Date appDate
-	Date appTime
-	Date appDuration
+	String appTime
+	String appDuration
 	String roomNumber
 
     static constraints = {
@@ -19,6 +19,6 @@ class Appointment {
 	roomNumber size:5..5, blank:false
 	
     }
-//static hasMany = [patient:Patient]
-//static belongsTo = [doctor:Doctor, patient:Patient, surgery:Surgery]
+
+static belongsTo = [doctor:Doctor, patient:Patient, surgery:Surgery]
 }
