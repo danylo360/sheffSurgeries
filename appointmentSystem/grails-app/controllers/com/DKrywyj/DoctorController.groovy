@@ -43,6 +43,7 @@ class DoctorController {
             '*' { respond doctor, [status: CREATED] }
         }
     }
+    
 
     def edit(Long id) {
         respond doctorService.get(id)
@@ -85,6 +86,29 @@ class DoctorController {
             }
             '*'{ render status: NO_CONTENT }
         }
+    }
+    
+    def login() {
+    	}
+
+    def validate() {
+    def email = Doctor.findByEmail(params.email)
+    if (email && email.password == params.password){
+	     
+	     session.email = email
+
+	     render view:'home'
+}
+
+    else{
+    flash.message = "Invalid email and password."
+    render view:'login'
+    }
+}
+
+    def logout = {
+         session.email = null
+         redirect(uri:'/')
     }
 
     protected void notFound() {
