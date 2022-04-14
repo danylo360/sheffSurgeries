@@ -5,10 +5,10 @@ class Surgery {
 // Declaring Variables
 	String name
 	String postcode
-	String telepone
+	String telephone
 	int numberOfPatients
 	String description
-	Date openingTimes
+	String openingTimes
 
 
     static constraints = {

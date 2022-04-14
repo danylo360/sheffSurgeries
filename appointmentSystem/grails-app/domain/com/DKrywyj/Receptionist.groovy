@@ -2,11 +2,12 @@ package com.DKrywyj
 
 class Receptionist {
 
+
 // Declaring Variables
 	String recepName
 	String recepEmail
-	String recepUsername
-	String recepPassword
+	String username
+	String password
 	String recepPhone
 
 
