@@ -4,7 +4,7 @@ class Prescription {
 
 // Declaring Variables
 	String pharmacyName
-	int prescriptionNumber
+	String prescriptionNumber
 	String medicine
 	int totalCost
 	Date dateIssued
@@ -15,9 +15,9 @@ class Prescription {
 
 //Write constraints
 	pharmacyName size:3..30, blank:false
-	prescriptionNumber size:5..50, blank:false
+	prescriptionNumber blank:false
 	medicine size:0..30, blank:false
-	totalCost size:3..30, blank:false
+	totalCost size:0..30, blank:false
 	dateIssued blank:false
 	patientPaying size:0..3, blank:false
 	
