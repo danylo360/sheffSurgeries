@@ -5,7 +5,7 @@ class Surgery {
 // Declaring Variables
 	String name
 	String postcode
-	int telepone
+	String telepone
 	int numberOfPatients
 	String description
 	Date openingTimes
@@ -18,7 +18,7 @@ class Surgery {
 	postcode size:6..6, blank:false
 	telephone size:11..11, blank:false
 	numberOfPatients size:1..300, blank:false
-	description Size:10..150, blank:false
+	description size:10..150, blank:false
 	openingTimes blank:false
     }
 static hasMany = [appointment:Appointment, nurse:Nurse, doctor:Doctor, patient:Patient, receptionist:Receptionist]

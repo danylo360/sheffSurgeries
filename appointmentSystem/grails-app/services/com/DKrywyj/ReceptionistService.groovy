@@ -15,4 +15,6 @@ interface ReceptionistService {
 
     Receptionist save(Receptionist receptionist)
 
+
 }
+

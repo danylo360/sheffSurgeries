@@ -5,7 +5,7 @@ import static org.springframework.http.HttpStatus.*
 
 class SurgeryController {
 
-    SurgeryService surgeryService
+    	SurgeryService surgeryService
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 

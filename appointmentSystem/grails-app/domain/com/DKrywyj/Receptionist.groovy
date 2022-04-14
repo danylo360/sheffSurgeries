@@ -7,7 +7,7 @@ class Receptionist {
 	String recepEmail
 	String recepUsername
 	String recepPassword
-	int recepPhone
+	String recepPhone
 
 
     static constraints = {
@@ -18,6 +18,9 @@ class Receptionist {
 	recepUsername size:8..20, blank:false
 	recepPassword size:5..15, blank:false
 	recepPhone size:11..11, blank:false
+	
+
+
 	
     }
 
